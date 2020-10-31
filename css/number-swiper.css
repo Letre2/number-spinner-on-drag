@@ -1,0 +1,68 @@
+.number-swiper{
+  display:flex;
+  font-size: 30vmin;
+  justify-content: center;
+  /* transition: 1s; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0));
+  align-items: center;
+  user-select: none;
+
+}
+
+/* 
+.number-swiper:active .number-swiper-column, .number-swiper:hover .number-swiper-column, .number-swiper:focus-within .number-swiper-column {
+  box-shadow: 0 0 .1em .1em rgba(0, 0, 0, 0.5) inset;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.5));
+  transition: 1s;
+} */
+
+.number-swiper-column::-webkit-scrollbar { display:none }
+
+.number-swiper-column{
+  overflow: scroll;
+  scrollbar-width: none;
+  height: 2.5em;
+  list-style: none;
+  padding: 0;
+  margin: auto 0;
+  scroll-snap-type: y mandatory;
+}
+
+.number-swiper-column li{
+  scroll-snap-align: center;
+  height: 1em;
+  margin: .25em .03em .3em .1em;
+}
+
+
+body {
+  font-family: Inter, sans-serif;
+  font-size: 30px;
+  margin: 30 px;
+  background-color: #eee;
+}
+
+p {
+  margin: 20px;
+}
+
+.number-spinner {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: white;
+  user-select: none;
+}
+
+.number-spinner:hover {
+  border: 2px solid black;
+  padding: 4px;
+}
+
+.number-spinner.fast {
+  color: tomato;
+}
+
+.number-spinner.slow {
+  color: green;
+}
